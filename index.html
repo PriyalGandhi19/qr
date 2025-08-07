@@ -1,15 +1,90 @@
-<!-- Save this as hacked.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hacked</title>
-  <script>
-    alert("⚠️ You have been hacked!");
-  </script>
+  <meta charset="UTF-8">
+  <title>⚠️ SYSTEM BREACH DETECTED</title>
+  <style>
+    body {
+      background: black;
+      color: #ff3b3b;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 50px;
+      animation: flicker 2s infinite;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 0 0 10px red;
+      margin-bottom: 20px;
+    }
+
+    .alert-box {
+      border: 2px solid red;
+      padding: 30px;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 600px;
+      background: rgba(255, 0, 0, 0.1);
+      box-shadow: 0 0 30px red;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    .progress {
+      background: #222;
+      border: 1px solid red;
+      width: 90%;
+      max-width: 500px;
+      margin: 20px auto;
+      height: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background: red;
+      height: 100%;
+      width: 0;
+      animation: loading 10s linear forwards;
+    }
+
+    @keyframes loading {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.85; }
+      100% { opacity: 1; }
+    }
+
+    .footer {
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color:red; text-align:center;">You have been hacked!</h1>
-  <p style="text-align:center;">This is just a harmless demo.</p>
+  <h1>🔒 SYSTEM BREACH DETECTED</h1>
+
+  <div class="alert-box">
+    <p><strong>⚠️ Your device has been compromised!</strong></p>
+    <p><strong>Hacked by: PROYAL GANDHI</strong></p>
+    <p>All your data is being transferred to an unknown server.</p>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <p><em>Transferring sensitive files...</em></p>
+  </div>
+
+  <div class="footer">
+    <p>This is a harmless simulation for educational/demo purposes only.</p>
+  </div>
+
+  <script>
+    alert("⚠️ Your system has been hacked by PROYAL GANDHI. All your data is being transferred.");
+  </script>
 </body>
 </html>
-
